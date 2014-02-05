@@ -88,27 +88,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ev='evince'
-alias xclip='xclip -selection clipboard'
 
-#alias g++='g++-4.4'
-#alias gcc='gcc-4.4'
-
-alias matlab='sh /usr/local/MATLAB/R2012b/bin/matlab -nodisplay'
-
-alias ma='cd /home/arne/Documents/Masterarbeit'
-alias cv='cd /home/arne/Documents/CV/'
-alias ext='cd /home/arne/Documents/Extensions_package'
-
-alias sos='rm -rf ~/.cache/sessions; xfwm4 --replace'
-
-alias brutus='ssh ahansen@brutus.ethz.ch'
-
-alias brutusftp='sftp ahansen@brutus.ethz.ch'
-
-alias ncci='cd /home/arne/Documents/Internship_NA/NCCI/copy_HDD/NCCI/NCCI_information/Member_Lists_from_Branches/'
-alias nef='cd /home/arne/Documents/Internship_NA/NEF_DB'
-alias leda='cd /home/arne/Documents/Internship_NA/LEDA'
+############################
+# custom aliases
+alias cv='cd /home/arne/Documents/Application/CV'
+alias pres='vim /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/presentation.tex'
+############################
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
