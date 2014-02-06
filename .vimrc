@@ -1,4 +1,5 @@
 execute pathogen#infect()
+" useful plugins: 
 
 set number
 
