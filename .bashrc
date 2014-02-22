@@ -92,7 +92,7 @@ alias l='ls -CF'
 ############################
 # custom aliases
 alias cv='cd /home/arne/Documents/Application/CV'
-alias pres='vim /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/presentation.tex'
+# alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
 ############################
 
 # Add an "alert" alias for long running commands.  Use like so:

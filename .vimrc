@@ -48,3 +48,6 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 set shiftwidth=2
+
+" turn off latex symbol conversion
+let g:tex_conceal = ""
