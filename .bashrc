@@ -92,6 +92,8 @@ alias l='ls -CF'
 ############################
 # custom aliases
 alias cv='cd /home/arne/Documents/Application/CV'
+alias cl='cd /home/arne/Documents/Application/Cover_Letters/'
+alias appl='cd /home/arne/Documents/Application/'
 # alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
 ############################
 
