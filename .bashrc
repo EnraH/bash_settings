@@ -95,8 +95,31 @@ alias cv='cd /home/arne/Documents/Application/CV'
 alias cl='cd /home/arne/Documents/Application/Cover_Letters/'
 alias ncl='cd /home/arne/Documents/Application/Cover_Letters/; lowriter Cover_Letter.ott'
 alias appl='cd /home/arne/Documents/Application/'
-alias tdw='cd /home/arne/Documents/Studies/; evince tdw2013.pdf'
+alias tdw12='cd /home/arne/Documents/Studies/; evince tdw2013.pdf'
+alias tdw06='cd /home/arne/Documents/Studies/; evince thermo06.pdf'
 # alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
+
+############################
+# custom functions
+shrinkPDF ()
+{
+  gs          \
+  -q -dNOPAUSE -dBATCH -dSAFER    \
+  -sDEVICE=pdfwrite     \
+  -dCompatibilityLevel=1.3    \
+  -dPDFSETTINGS=/screen     \
+  -dEmbedAllFonts=true      \
+  -dSubsetFonts=true      \
+  -dColorImageDownsampleType=/Bicubic \
+  -dColorImageResolution=72   \
+  -dGrayImageDownsampleType=/Bicubic  \
+  -dGrayImageResolution=72    \
+  -dMonoImageDownsampleType=/Bicubic  \
+  -dMonoImageResolution=72    \
+  -sOutputFile="$2"     \
+  "$1"
+}
+
 ############################
 
 # Add an "alert" alias for long running commands.  Use like so:
