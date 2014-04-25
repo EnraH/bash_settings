@@ -95,8 +95,10 @@ alias cv='cd /home/arne/Documents/Application/CV'
 alias cl='cd /home/arne/Documents/Application/Cover_Letters/'
 alias ncl='cd /home/arne/Documents/Application/Cover_Letters/; lowriter Cover_Letter.ott'
 alias appl='cd /home/arne/Documents/Application/'
+alias tdw='cd /home/arne/Documents/Studies/; evince tdw_skript_2011_09_17.pdf'
 alias tdw12='cd /home/arne/Documents/Studies/; evince tdw2013.pdf'
 alias tdw06='cd /home/arne/Documents/Studies/; evince thermo06.pdf'
+alias huang='cd /home/arne/Documents/Studies/; evince huang.pdf'
 # alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
 
 ############################
