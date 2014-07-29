@@ -4,7 +4,7 @@ execute pathogen#infect()
 set number
 
 set t_Co=256
-colorscheme desert
+colorscheme delek
 " let g:indent_guides_auto_colors = 0
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black   ctermbg=3
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkcyan
@@ -51,3 +51,6 @@ set shiftwidth=2
 
 " turn off latex symbol conversion
 let g:tex_conceal = ""
+
+" turn on code folding
+set fdm=syntax
