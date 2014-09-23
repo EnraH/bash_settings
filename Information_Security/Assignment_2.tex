@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\title{Introduction to Information Security - Homework Assignment 1}	
+\author{Arne Hansen}
+% Make sure you write your name and surname on your solution!
+%\date{March 1, 2012}	
+
+\begin{document}
+\maketitle
+
+\paragraph{Time required} to solve the exercise: 2h
+
+\section{Security Ojectives}
+
+
+\subsection{CIA triad}
+Even though the following concepts are not bound to information security I will consider the usual ``information setting''.
+\subsubsection{Authenticity and Integrity}
+\paragraph{Authenticity} % (fold)
+\label{par:Authenticity}
+ensures that data is genuine in the sense that it was created or sent by whoever claims to be the source.
+% paragraph Authenticity (end)
+
+\paragraph{Integrity} % (fold)
+\label{par:Integrity}
+ensure that the data was not altered by unauthorized entities.
+% paragraph Integrity (end)
+
+\subsubsection{Confidentiality and Anonymity}
+
+\paragraph{Confidentiality} % (fold)
+\label{par:Confidentiality}
+Data should merely be accessible to authorized entities. 
+% paragraph Confidentiality (end)
+
+\paragraph{Anonymity} % (fold)
+\label{par:Anonymity}
+An unauthorized party cannot identify who created or sent the data.
+% paragraph Anonymity (end)
+
+\subsubsection{Identification vs. Authentification}
+
+\paragraph{Identification} % (fold)
+\label{par:Identification}
+shows who you are independent of your access rights to given data. Thus while identifying youself you will loose \emph{anonymity}.
+% paragraph Identification (end)
+
+\paragraph{Authentification} % (fold)
+\label{par:Authentification}
+Idenpendent of your identity you have to proove that you are authorized to access certain information.
+% paragraph Authentification (end)
+
+\subsection{Department Store Databases}
+
+\subsubsection{Confidentiality}
+Imagine the department store has a Loyalty Program. Of course the department store would like to learn something about their customers and therefore asks some confidential information while signing up for Program. The information is stored in a database with restricted access. In other words: the implementation of the database has to ensure the confidentiality of the data. Otherwise the credibility of the dapartment store would be at stake. This might lead to a loss of customers. 
+
+\subsubsection{Integrity}
+The department store might have a central databases for all their financial records. This database might be the bases for fiscal considerations, plannings etc. Therefore integrity is crucial for the database. Otherwise unautherized personel could alter entries causing legal issues.
+
+\subsubsection{Availability}
+Another database might contain all the product information, such as price and quantity in stock. This information should be available throuthout to all sales assistant. Otherwise this might be cause delays and issues at the ceck-out.
+
+\section{Attack Trees}
+
+\subsection{E-banking}
+
+\begin{itemize}
+  \item transfer money from account
+  \item control over the account
+  \item access the ebanking system itself (not merely the account)
+\end{itemize}
+
+
+\section{Optional information}
+It took me 1 hour 20 minutes to do this assignment.
+
+\end{document}             % End of document.
