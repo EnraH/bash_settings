@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -91,13 +91,31 @@ alias l='ls -CF'
 
 ############################
 # custom aliases
+
+# aliases to change to common dirs
 alias cv='cd /home/arne/Documents/Application/CV'
 alias cl='cd /home/arne/Documents/Application/Cover_Letters/'
 alias ncl='cd /home/arne/Documents/Application/Cover_Letters/; lowriter Cover_Letter.ott'
 alias appl='cd /home/arne/Documents/Application/'
 alias nielsenchuang='cd /home/arne/Documents/Studies/Masterarbeit/Literature; evince nielsenchuang.djvu'
 alias werner='cd /home/arne/Documents/PhD/project_werner'
-# alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
+alias poster='cd /home/arne/Documents/PhD/INFO0101/poster/'
+alias lecture='cd ~/Documents/PhD/Lectures_given/14_Prob_Inf/'
+alias infsec='cd /home/arne/Documents/PhD/Lectures_taken/Information_Security'
+alias prob='cd /home/arne/Documents/PhD/Lectures_given/14_Prob_Inf'
+alias qm='cd /home/arne/Documents/PhD/Coding/cpp_classes/quantum'
+alias solver='cd /home/arne/Documents/PhD/Coding/cpp_classes/solvers'
+alias opt='cd /home/arne/Documents/PhD/Coding/cpp_classes/optimization_problems'
+alias gen='cd /home/arne/Documents/PhD/Coding/cpp_classes/general'
+
+# Git aliases
+alias gst='git status'
+alias ga='git add --all'
+alias gc='git commit -m '
+alias gp='git push'
+alias comp='bash compile.sh'
+
+#alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
 
 ############################
 # custom functions
