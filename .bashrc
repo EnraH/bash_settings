@@ -107,6 +107,8 @@ alias qm='cd /home/arne/Documents/PhD/Coding/cpp_classes/quantum'
 alias solver='cd /home/arne/Documents/PhD/Coding/cpp_classes/solvers'
 alias opt='cd /home/arne/Documents/PhD/Coding/cpp_classes/optimization_problems'
 alias gen='cd /home/arne/Documents/PhD/Coding/cpp_classes/general'
+alias cp3p='cd /home/arne/Documents/PhD/Coding/finite-speed-communication'
+alias dm='cd /home/arne/Documents/PhD/Lectures_given/15_Discr_Math/Script'
 
 # Git aliases
 alias gst='git status'
@@ -114,6 +116,7 @@ alias ga='git add --all'
 alias gc='git commit -m '
 alias gp='git push'
 alias comp='bash compile.sh'
+alias br='cd /var/www/html/cornaredo_routes/'
 
 #alias pres='cd /home/arne/Documents/Studies/Masterarbeit/Presentation_USI/; vim presentation.tex'
 
@@ -163,3 +166,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Gurobi settings
+export GUROBI_HOME="/opt/gurobi604/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
+
+export PATH="${PATH}:/usr/local/texlive/2015/bin/x86_64-linux"
